@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".databaseBarang.orderBarang.cartBarang.CartBarangActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCartBarang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tvCartNamaBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/tvCartKodeBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/tvCartStokBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/containerCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="15dp"
+        android:padding="8dp"
+        app:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rvCartBarang">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Checkout"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+             />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

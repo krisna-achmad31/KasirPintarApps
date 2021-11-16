@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".databaseBarang.orderBarang.updateStok.UpdateStokActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".3"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/tvTittleNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_nama_barang"
+                android:layout_marginLeft="4dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <EditText
+                android:id="@+id/etNamaBarang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:hint="Nama Barang...."
+                app:layout_constraintTop_toBottomOf="@+id/tvTittleNama"/>
+
+            <TextView
+                android:id="@+id/tvTittleKode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_kode_barang"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="4dp"
+                app:layout_constraintTop_toBottomOf="@id/etNamaBarang"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <EditText
+                android:id="@+id/etKodeBarang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:hint="Kode Barang...."
+                app:layout_constraintTop_toBottomOf="@+id/tvTittleKode"/>
+
+            <TextView
+                android:id="@+id/tvTittleStok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_stok"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/etKodeBarang"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="4dp" />
+
+            <EditText
+                android:id="@+id/etStok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:hint="Stok Barang...."
+                app:layout_constraintTop_toBottomOf="@+id/tvTittleStok"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toBottomOf="@id/containerInfo"
+            android:text="Update Info Barang"
+            />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

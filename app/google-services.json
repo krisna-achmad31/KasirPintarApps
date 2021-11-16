@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "691243729431",
+    "firebase_url": "https://pretestkasirpintar-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "pretestkasirpintar",
+    "storage_bucket": "pretestkasirpintar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691243729431:android:6f53621c5e63ec9a1d5252",
+        "android_client_info": {
+          "package_name": "com.kris.kasirpintar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691243729431-kla0eud6ealcr82k38dioijsrqbm3da3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj6PwhiWCUDRV4Wb53BKbcRmuWU_n9oW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691243729431-kla0eud6ealcr82k38dioijsrqbm3da3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

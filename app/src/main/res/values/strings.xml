@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kasir Pintar</string>
+    <string name="lbl_nama_barang">Nama Barang</string>
+    <string name="lbl_kode_barang">Kode Barang</string>
+    <string name="lbl_stok">Stok</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
